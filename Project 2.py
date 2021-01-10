@@ -16,8 +16,8 @@ def changedir():
 	os.chdir(b)
 
 #variables
-senderMail='justin.fuller15537@gmail.com'
-recieverMail='chitranjan15537@gmail.com'
+senderMail='***SENDERS MAIL*****'
+recieverMail='*****RECIEVERS MAIL******'
 body='Hello world!'
 subject='test'
 
@@ -50,7 +50,7 @@ def mail():
 	text=msg.as_string()
 	server=smtplib.SMTP('smtp.gmail.com',587) 
 	server.starttls()
-	server.login(senderMail,'storm_thunder')
+	server.login(senderMail,''*****SENDERS MAIL PASSWORD*******'')
 	server.ehlo()
 	server.sendmail(senderMail,recieverMail,text)
 	server.quit()
